@@ -1,6 +1,6 @@
 FROM tomcat:9
 #COPY /var/lib/jenkins/workspace/myntra-clothes/target/clothes-v1.jar /var/lib/jenkins/workspace/
-#COPY clothes-v1.jar /usr/local/tomcat9/webapps/
-ADD ./target/clothes-v1.jar /usr/local/tomcat9/webapps/
+#COPY clothes-v1.jar /usr/local/tomcat/webapps/
+ADD ./target/clothes-v1.jar /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
 
